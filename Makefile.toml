@@ -10,7 +10,7 @@ install_crate = "wasm-pack"
 command = "wasm-pack"
 args = ["build"]
 
-[tasks.run_server]
+[tasks.server]
 script=[
 '''
 cd ./www
@@ -31,5 +31,5 @@ npm link ${CARGO_MAKE_CRATE_NAME}
 ]
 dependencies = ["wasm"]
 
-[tasks.all_in_one]
-dependencies = ["wasm","wasm-server"]
+[tasks.init_server]
+dependencies = ["init_www","server"]
