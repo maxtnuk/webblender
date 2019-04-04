@@ -1,0 +1,35 @@
+[env.development]
+DEV = "TRUE"
+
+[tasks.build]
+command = "cargo"
+args = ["build"]
+
+[tasks.wasm]
+install_crate = "wasm-pack"
+command = "wasm-pack"
+args = ["build"]
+
+[tasks.run_server]
+script=[
+'''
+cd ./www
+npm run start
+'''
+]
+
+[tasks.init_www]
+script=[
+'''
+npm init wasm-app www
+cd ./pkg
+npm link
+cd ..
+cd ./www
+npm link ${CARGO_MAKE_CRATE_NAME}
+'''
+]
+dependencies = ["wasm"]
+
+[tasks.all_in_one]
+dependencies = ["wasm","wasm-server"]
