@@ -3,6 +3,8 @@ name = "webblender"
 version = "0.1.0"
 authors = ["maxtnuk <maxtnuk@gmail.com>"]
 edition = "2018"
+description = "webblender for rust"
+readme = "README.md"
 
 [lib]
 cfg-if = "0.1.2"
