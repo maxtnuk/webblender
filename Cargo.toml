@@ -5,6 +5,8 @@ authors = ["maxtnuk <maxtnuk@gmail.com>"]
 edition = "2018"
 description = "webblender for rust"
 readme = "README.md"
+license = "MIT"
+repository = "https://github.com/serde-rs/serde"
 
 [lib]
 cfg-if = "0.1.2"
