@@ -1,6 +1,7 @@
 ## Webblender
 
 library for webgl with blender
+( still developing it cannot use )
 
 ## To Do
 
