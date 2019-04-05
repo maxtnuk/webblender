@@ -1,7 +1,7 @@
 use wasm_bindgen::JsCast;
 use web_sys::{WebGl2RenderingContext, WebGlProgram, WebGlShader, WebGlUniformLocation};
 
-mod shader;
+pub mod shader;
 
 pub fn get_canvas(id: &str) -> Result<WebGl2RenderingContext, js_sys::Object> {
     let document = web_sys::window().unwrap().document().unwrap();

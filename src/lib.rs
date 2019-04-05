@@ -13,6 +13,7 @@ pub mod gl;
 #[macro_use]
 pub mod util;
 pub mod app;
+#[doc(hidden)]
 pub mod test;
 
 #[allow(dead_code)]
