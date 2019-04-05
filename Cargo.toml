@@ -6,7 +6,7 @@ edition = "2018"
 description = "webblender for rust"
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/serde-rs/serde"
+repository = "https://github.com/maxtnuk/webblender.git"
 
 [lib]
 cfg-if = "0.1.2"
