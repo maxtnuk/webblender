@@ -5,6 +5,7 @@ use std::rc::Rc;
 pub mod prelude{
     pub use crate::app::App;
     pub use crate::util::*;
+    pub use crate::test::*;
 }
 use crate::prelude::*;
 
@@ -12,6 +13,7 @@ pub mod gl;
 #[macro_use]
 pub mod util;
 pub mod app;
+pub mod test;
 
 #[allow(dead_code)]
 #[wasm_bindgen]

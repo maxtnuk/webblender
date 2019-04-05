@@ -1,3 +1,6 @@
+[env.development]
+DEV = "TRUE"
+
 [tasks.build]
 command = "cargo"
 args = ["build"]
@@ -8,7 +11,7 @@ command = "wasm-pack"
 args = ["build"]
 
 [tasks.server]
-script=[
+script = [
 '''
 cd ./www
 npm run start
@@ -16,7 +19,7 @@ npm run start
 ]
 
 [tasks.init_www]
-script=[
+script = [
 '''
 npm init wasm-app www
 cd ./pkg

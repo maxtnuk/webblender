@@ -13,8 +13,3 @@ pub fn get_canvas(id: &str) -> Result<WebGl2RenderingContext, js_sys::Object> {
         .unwrap()
         .dyn_into::<WebGl2RenderingContext>()
 }
-
-#[test]
-fn gl_init() {
-    unimplemented!()
-}
